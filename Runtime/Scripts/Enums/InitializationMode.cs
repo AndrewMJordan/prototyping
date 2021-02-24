@@ -1,0 +1,21 @@
+/*
+ *	Copyright (c) 2020, AndrewMJordan
+ *	All rights reserved.
+ *	
+ *	This source code is licensed under the BSD-style license found in the
+ *	LICENSE file in the root directory of this source tree
+ */
+
+namespace Andtech.Prototyping {
+
+	/// <summary>
+	/// Description of when initialization happens.
+	/// </summary>
+	public enum InitializationMode {
+		Never,
+		Awake,
+		OnEnable,
+		Start,
+		Constructor
+	}
+}
