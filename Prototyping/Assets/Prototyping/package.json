@@ -1,0 +1,17 @@
+{
+	"name": "com.andtech.prototyping",
+	"version": "0.1.0",
+	"displayName": "Prototyping",
+	"description": "Prototyping assets for Unity",
+	"author": {
+		"name": "AndrewMJordan",
+		"email": null
+	},
+	"samples": [
+		{
+			"displayName": "Player movers",
+			"Description": "Simple player movement",
+			"path": "Samples/Player Movers"
+		}
+	]
+}
