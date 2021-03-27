@@ -15,7 +15,6 @@
 		"email": "andtechgames@gmail.com",
 		"url": "https://github.com/AndtechGames/"
 	},
-	"repository": "https://github.com/AndtechGames/prototyping.git",
 	"license": "BSD-3-Clause",
 	"samples": [
 		{
@@ -23,5 +22,12 @@
 			"description": "Simple player movement",
 			"path": "Samples/Player Movers"
 		}
-	]
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/AndtechGames/prototyping.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@AndtechGames"
+	}
 }
