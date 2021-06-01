@@ -1,10 +1,12 @@
 ﻿
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public enum TransformComponent {
-		None,
-		Position,
-		Rotation,
-		Scale
-	}
+    public enum TransformComponent
+    {
+        None,
+        Position,
+        Rotation,
+        Scale
+    }
 }

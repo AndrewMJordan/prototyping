@@ -1,10 +1,12 @@
 ﻿
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface ISelectionObserver {
+    public interface ISelectionObserver
+    {
 
-		void OnSelect();
+        void OnSelect();
 
-		void OnDeselect();
-	}
+        void OnDeselect();
+    }
 }

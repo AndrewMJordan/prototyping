@@ -1,10 +1,12 @@
 ﻿
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface IHighlightObserver {
+    public interface IHighlightObserver
+    {
 
-		void OnHighlight();
+        void OnHighlight();
 
-		void OnDehighlight();
-	}
+        void OnDehighlight();
+    }
 }

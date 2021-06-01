@@ -2,29 +2,34 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public class TransformWatcher : MonoBehaviour {
-		public Transform Target {
-			get => target;
-			set => target = value;
-		}
+    public class TransformWatcher : MonoBehaviour
+    {
+        public Transform Target
+        {
+            get => target;
+            set => target = value;
+        }
 
-		[SerializeField]
-		private Transform target;
+        [SerializeField]
+        private Transform target;
 
-		public UnityEvent onTransformChanged;
+        public UnityEvent onTransformChanged;
 
-		public void Check() {
-			if (Target.hasChanged) {
-				ChangedTransform?.Invoke(this, EventArgs.Empty);
-				onTransformChanged.Invoke();
-				Target.hasChanged = false;
-			}
-		}
+        public void Check()
+        {
+            if (Target.hasChanged)
+            {
+                ChangedTransform?.Invoke(this, EventArgs.Empty);
+                onTransformChanged.Invoke();
+                Target.hasChanged = false;
+            }
+        }
 
-		#region EVENT
-		public event EventHandler ChangedTransform;
-		#endregion
-	}
+        #region EVENT
+        public event EventHandler ChangedTransform;
+        #endregion
+    }
 }

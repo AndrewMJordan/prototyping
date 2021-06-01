@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	[Flags]
-	public enum UpdateMode {
-		Never,
-		Update,
-		LateUpdate,
-		FixedUpdate
-	}
+    [Flags]
+    public enum UpdateMode
+    {
+        Never,
+        Update,
+        LateUpdate,
+        FixedUpdate
+    }
 }

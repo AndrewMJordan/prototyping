@@ -2,29 +2,34 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public class Clock : MonoBehaviour {
-		public float Interval => interval;
+    public class Clock : MonoBehaviour
+    {
+        public float Interval => interval;
 
-		[SerializeField]
-		private float interval = 1.0F;
+        [SerializeField]
+        private float interval = 1.0f;
 
-		public UnityEvent onTrigger;
+        public UnityEvent onTrigger;
 
-		#region MONOBEHAVIOUR
-		protected virtual void OnEnable() {
-			var routine = Checking();
-			StartCoroutine(routine);
+        #region MONOBEHAVIOUR
+        protected virtual void OnEnable()
+        {
+            var routine = Checking();
+            StartCoroutine(routine);
 
-			IEnumerator Checking() {
-				while (enabled) {
-					onTrigger.Invoke();
+            IEnumerator Checking()
+            {
+                while (enabled)
+                {
+                    onTrigger.Invoke();
 
-					yield return new WaitForSeconds(Interval);
-				}
-			}
-		}
-		#endregion
-	}
+                    yield return new WaitForSeconds(Interval);
+                }
+            }
+        }
+        #endregion
+    }
 }

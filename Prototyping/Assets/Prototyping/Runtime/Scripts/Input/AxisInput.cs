@@ -2,24 +2,27 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	[Serializable]
-	public class AxisInputEvent : UnityEvent<float> { }
+    [Serializable]
+    public class AxisInputEvent : UnityEvent<float> { }
 
-	/// <summary>
-	/// Invokes actions when a button is activated.
-	/// </summary>
-	public class AxisInput : MonoBehaviour {
-		[SerializeField]
-		private string axisName = "Fire1";
+    /// <summary>
+    /// Invokes actions when a button is activated.
+    /// </summary>
+    public class AxisInput : MonoBehaviour
+    {
+        [SerializeField]
+        private string axisName = "Fire1";
 
-		public AxisInputEvent onTrigger;
+        public AxisInputEvent onTrigger;
 
-		#region MONOBEHAVIOUR
-		protected virtual void Update() {
-			onTrigger?.Invoke(Input.GetAxis(axisName));
-		}
-		#endregion
-	}
+        #region MONOBEHAVIOUR
+        protected virtual void Update()
+        {
+            onTrigger?.Invoke(Input.GetAxis(axisName));
+        }
+        #endregion
+    }
 }
