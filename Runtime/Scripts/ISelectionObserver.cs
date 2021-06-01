@@ -6,12 +6,14 @@
  *	LICENSE file in the root directory of this source tree
  */
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface ISelectionObserver {
+    public interface ISelectionObserver
+    {
 
-		void OnSelect();
+        void OnSelect();
 
-		void OnDeselect();
-	}
+        void OnDeselect();
+    }
 }

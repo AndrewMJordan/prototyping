@@ -6,12 +6,14 @@
  *	LICENSE file in the root directory of this source tree
  */
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public enum TransformComponent {
-		None,
-		Position,
-		Rotation,
-		Scale
-	}
+    public enum TransformComponent
+    {
+        None,
+        Position,
+        Rotation,
+        Scale
+    }
 }

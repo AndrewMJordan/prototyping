@@ -6,12 +6,14 @@
  *	LICENSE file in the root directory of this source tree
  */
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface IHighlightObserver {
+    public interface IHighlightObserver
+    {
 
-		void OnHighlight();
+        void OnHighlight();
 
-		void OnDehighlight();
-	}
+        void OnDehighlight();
+    }
 }

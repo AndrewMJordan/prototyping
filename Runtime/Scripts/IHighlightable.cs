@@ -8,13 +8,15 @@
 
 using System;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface IHighlightable {
+    public interface IHighlightable
+    {
 
-		#region EVENT
-		event EventHandler RequestedHighlight;
-		event EventHandler RequestedDehighlight;
-		#endregion
-	}
+        #region EVENT
+        event EventHandler RequestedHighlight;
+        event EventHandler RequestedDehighlight;
+        #endregion
+    }
 }

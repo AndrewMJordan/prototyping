@@ -8,13 +8,15 @@
 
 using System;
 
-namespace Andtech.Prototyping {
+namespace Andtech.Prototyping
+{
 
-	public interface ISelectable {
+    public interface ISelectable
+    {
 
-		#region EVENT
-		event EventHandler RequestedSelect;
-		event EventHandler RequestedDeselect;
-		#endregion
-	}
+        #region EVENT
+        event EventHandler RequestedSelect;
+        event EventHandler RequestedDeselect;
+        #endregion
+    }
 }
